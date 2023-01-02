@@ -5,20 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Tabela IMC</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
   <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
+    <h1>Calcule seu IMC</h1>
+    <form id="form" action="/" method="post" autocomplete="off">
+      <p>
+        <label for="peso">Peso em kg:<br></label>
+        <input type="text" id="peso" name="peso" required>
+      </p>
+      <p>
+        <label for="altura">Altura em metros:<br></label>
+        <input type="text" id="altura" name="altura" required>
+      </p>
+      <button type="submit">Calcular</button>
+      <p id="output"></p>
+    </form>
+
+    <div class="especifications">
+      <div class="column">
+        <h3>IMC</h3>
+        <p>Menos do que 18,5</p>
+        <p>Entre 18,5 e 24,9</p>
+        <p>Entre 25 e 29,9</p>
+        <p>Entre 30 e 34,9</p>
+        <p>Entre 35 e 39,9</p>
+        <p>Mais do que 40</p>
+      </div>
+
+      <div class="column">
+        <h3>Resultado</h3>
+        <p>Abaixo do peso</p>
+        <p>Peso normal</p>
+        <p>Sobrepeso</p>
+        <p>Obesidade Grau 1</p>
+        <p>Obesidade Grau 2</p>
+        <p>Obesidade Grau 3</p>
+      </div>
+    </div>
+
   </section>
 
   <script src="./assets/js/main.js"></script>
