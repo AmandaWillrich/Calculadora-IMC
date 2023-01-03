@@ -65,3 +65,15 @@ form button:hover {
   width: 50%;
   text-align: center;
 }
+
+.good-result-paragraph {
+  background-color: rgb(114, 228, 110);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.bad-result-paragraph {
+  background-color: rgb(241, 115, 99);
+  padding: 10px 20px;
+  text-align: center;
+}
